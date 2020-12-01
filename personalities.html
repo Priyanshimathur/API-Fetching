@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Personalties-search</title>
@@ -132,7 +132,7 @@
                         var resultHtml = $("<div class=\"resultDiv\"><p>Names</p>");
                         for (i = 0; i < result["results"].length; i++) {
 
-                            var image = result["results"][i]["profile_path"] == null ? "css/imges/no-image.png" : "https://image.tmdb.org/t/p/w500/" + result["results"][i]["profile_path"];
+                            var image = result["results"][i]["profile_path"] == null ? "css/images/no-image.png" : "https://image.tmdb.org/t/p/w500/" + result["results"][i]["profile_path"];
 
                             resultHtml.append("<div class=\"result\" resourceId=\"" + result["results"][i]["id"] + "\">" + "<img src=\"" + image + "\" />" + "<p><a>" + result["results"][i]["name"] + "</a></p></div>")
                         }
